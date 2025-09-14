@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/estilo.css"> 
+        <meta charset="UTF-8"> 
+        <title>Juego de dados</title>
+    </head>
+    <body>
+<div class="app" role="application">
+<h1>Juego de Dados — Primero a 3</h1>
+<p class="lead">Tira dos dados. Si ambos muestran el mismo número, <strong>Jugador</strong> obtiene 1 punto; si no coinciden, <strong>Computadora</strong> obtiene 1 punto. El primero en llegar a 3 puntos gana.</p>
+
+
+<div class="scoreboard" aria-live="polite">
+<div class="panel" id="panel-jugador">
+<h2>Jugador</h2>
+<div class="points" id="puntos-jugador">0</div>
+</div>
+<div class="panel" id="panel-computadora">
+<h2>Computadora</h2>
+<div class="points" id="puntos-computadora">0</div>
+</div>
+</div>
+
+
+<div class="board">
+<div class="die" id="dado-1" aria-label="Dado del jugador">⚀</div>
+<div class="die" id="dado-2" aria-label="Dado de la computadora">⚀</div>
+</div>
+
+
+<div class="controls">
+<button id="btn-tirar" class="btn-primary">Tirar</button>
+<button id="btn-reset" class="btn-ghost">Reiniciar</button>
+</div>
+
+
+<div class="message" id="mensaje">¡Buena suerte!</div>
+<div class="small" style="text-align:center">Reglas: primero en llegar a 3 puntos gana.</div>
+<footer>Juego simple de dados</footer>
+</div>
+</body>
+</html>

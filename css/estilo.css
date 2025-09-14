@@ -1,0 +1,130 @@
+/* 🎴 Juego de Cartas */
+body {
+  font-family: Arial, sans-serif;
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 { 
+  margin-bottom: 10px; 
+}
+
+#juego { 
+  margin-top: 20px; 
+}
+
+.tabla {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.jugador, .computadora {
+  background: #1b5e20;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 200px;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.carta {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 60px;
+  cursor: pointer;
+}
+
+/* 🎲 Juego de Dados */
+#juego-dados {
+  margin-top: 40px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.panel {
+  background: #1b5e20;
+  padding: 12px 18px;
+  border-radius: 10px;
+  min-width: 140px;
+}
+
+.panel h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.points {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.board {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.die {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  user-select: none;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #ffd54f;
+  color: #000;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.message {
+  min-height: 28px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}

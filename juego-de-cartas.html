@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta charset="UTF-8">
+        <title>Juego de cartas</title>
+    </head>
+    <body>
+        <h1>Bienvenidos al juego de cartas</h1>
+        <p>El objetivo de este juego es ser el primero en alcanzar 3 puntos formando pares de cartas. </p>
+        <button type="button">Comenzar</button>
+        <div id="puntajes">Jugador: 0 | Computadora: 0</div>
+        <div id="juego">
+        <div class="tabla">
+        <div class="jugador">
+        <h2>Jugador</h2>
+        <div class="cartas" id="Cartasjugador"></div>
+        </div>
+        <div class="computadora">
+        <h2>Computadora</h2>
+        <div class="cartas" id="Cartascomputadora"></div>
+        </div>
+        </div>
+        <div id="pilaDescarte">Descartes: <span id="descartar"></span></div>
+        <div id="mensaje"></div>
+        <button id="empezar" style="display:none;">Jugar de nuevo</button>
+     </div>
+    </body>
+</html>
