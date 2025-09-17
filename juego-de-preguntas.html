@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta charset="UTF-8">
+        <title>Juego de preguntas</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Pagina principal</a>
+                <a href="juego-de-cartas.html">Juego de cartas</a>
+                <a href="juego-de-dados.html">Juego de dados</a>
+                <a href="tabla-de-puntajes.html">Tabla de puntajes</a>
+                <a href="desarrolladores.html">Desarrolladores</a>
+            </nav>
+        </header>
+        <h1>Bienvenido al juego de preguntas</h1>
+        <p>El objetivo es responder correctamente la mayor cantidad de preguntas antes que se que acabe el tiempo</p>
+         <div class="pregunta">
+    <h2 id="texto-pregunta">Aquí irá la pregunta...</h2>
+    <div class="opciones">
+      <button class="opcion">Respuesta 1</button>
+      <button class="opcion">Respuesta 2</button>
+      <button class="opcion">Respuesta 3</button>
+      <button class="opcion">Respuesta 4</button>
+    </div>
+  </div>
+
+  <div class="scoreboard">
+    <div class="panel">
+      <h2>Puntos</h2>
+      <div class="points" id="puntos-preguntas">0</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="btn-primary" id="btn-siguiente">Siguiente Pregunta</button>
+    <button class="btn-ghost" id="btn-reiniciar-preguntas">Reiniciar</button>
+  </div>
+
+  <div class="message" id="mensaje-preguntas">Selecciona una respuesta para comenzar.</div>
+</section>
+    </body>
+</html>
