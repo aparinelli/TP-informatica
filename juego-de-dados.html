@@ -6,9 +6,19 @@
         <title>Juego de dados</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="index.html">Pagina principal</a>
+                <a href="juego-de-cartas.html">Juego de cartas</a>
+                <a href="juego-de-dados.html">Juego de dados</a>
+                <a href="juego-de-preguntas.html">Juego de preguntas</a>
+                <a href="tabla-de-puntajes.html">Tabla de puntajes</a>
+                <a href="desarrolladores.html">Desarrolladores</a>
+            </nav>
+        </header>
 <div class="app" role="application">
-<h1>Juego de Dados — Primero a 3</h1>
-<p class="lead">Tira dos dados. Si ambos muestran el mismo número, <strong>Jugador</strong> obtiene 1 punto; si no coinciden, <strong>Computadora</strong> obtiene 1 punto. El primero en llegar a 3 puntos gana.</p>
+<h1>Bienvenidos al juego de dados</h1>
+<p class="lead">Tira dos dados. Si ambos muestran el mismo número suman esa cantidad de puntos. El juego termina despues de 15 rondas y el que tiene el puntaje mas alto gana</p>
 
 
 <div class="scoreboard" aria-live="polite">
@@ -24,8 +34,8 @@
 
 
 <div class="board">
-<div class="die" id="dado-1" aria-label="Dado del jugador">⚀</div>
-<div class="die" id="dado-2" aria-label="Dado de la computadora">⚀</div>
+<div class="die" id="dado-1" aria-label="Dado 1">⚀</div>
+<div class="die" id="dado-2" aria-label="Dado 2">⚀</div>
 </div>
 
 
@@ -36,8 +46,8 @@
 
 
 <div class="message" id="mensaje">¡Buena suerte!</div>
-<div class="small" style="text-align:center">Reglas: primero en llegar a 3 puntos gana.</div>
 <footer>Juego simple de dados</footer>
 </div>
+<script src="js/juego-de-dados.js"></script>
 </body>
 </html>
