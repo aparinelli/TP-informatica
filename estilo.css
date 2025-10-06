@@ -1,0 +1,317 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+nav {
+  background: #1b5e20;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 12px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background: #ffd54f;
+  color: #000;
+}
+
+nav a.active {
+  background: #fff;
+  color: #1b5e20;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+/* Juego de cartas */
+#juego {
+  margin-top: 20px;
+}
+
+.tabla {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+.jugador, .computadora {
+  background: #1b5e20;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 200px;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.carta {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 60px;
+  cursor: pointer;
+}
+
+/* Juego de dados */
+#juego-dados {
+  margin-top: 40px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  background: #1b5e20;
+  padding: 12px 18px;
+  border-radius: 10px;
+  min-width: 140px;
+}
+
+.panel h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.points {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.board {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+.die {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  user-select: none;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.shake {
+  transform: rotate(20deg);
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #ffd54f;
+  color: #000;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.message {
+  min-height: 28px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Juego de preguntas */
+#juego-preguntas {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.pregunta {
+  margin: 20px auto;
+  max-width: 600px;
+  background: #1b5e20;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#texto-pregunta {
+  margin-bottom: 15px;
+}
+
+.opciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.opcion {
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.opcion:hover {
+  background: #ffd54f;
+}
+
+.correcta { background: green; color: white; }
+.incorrecta { background: red; color: white; }
+
+/* Tabla de puntajes */
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 2px solid #1b5e20;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.header {
+  background: #1b5e20;
+  color: white;
+  font-weight: bold;
+}
+
+.row:last-child .cell {
+  border-bottom: none;
+}
+
+/* Diseño multimedial */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .die {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+
+  .pregunta {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .opciones {
+    grid-template-columns: 1fr; /* ✅ una opción por fila */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .die {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .panel {
+    min-width: 100px;
+    padding: 8px;
+  }
+
+  .points {
+    font-size: 1.2rem;
+  }
+}
